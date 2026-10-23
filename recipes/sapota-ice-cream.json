@@ -1,0 +1,56 @@
+{
+  "slug": "sapota-ice-cream",
+  "title": "Sapota (Chikoo) Ice Cream",
+  "eyebrow": "An easy freezer dessert",
+  "description": "Ripe chikoo, whipped cream, and condensed milk make a creamy, fruit-filled ice cream. Mix it, freeze it, and scoop. No ice-cream maker needed.",
+  "shortDescription": "Creamy chikoo ice cream with ripe fruit and condensed milk. Five ingredients, no ice-cream maker.",
+  "image": "sapota-ice-cream.jpg",
+  "imageAlt": "Pale caramel-coloured chikoo ice cream in a cream bowl, with whole and halved sapota beside it",
+  "tags": ["No churn", "Dessert", "5 ingredients"],
+  "yield": "1 small tub",
+  "prepTime": "About 15 minutes",
+  "totalTime": "15 min + 6–8 hr freezing",
+  "equipment": "Blender · mixer · freezer-safe container",
+  "introNote": "Use fully ripe sapota and cold cream. The amount of fruit varies with its size; start with 4 ripe fruits and use a fifth for a stronger chikoo flavour.",
+  "methodTitle": "Mix, fold & freeze",
+  "methodLabel": "Mix & freeze",
+  "storageLabel": "Store & serve",
+  "storageSubtitle": "Keep it frozen. Scoop when ready.",
+  "groceries": [
+    {"aisle": "Produce", "items": [
+      {"id": "sapota", "text": "4–5 ripe sapota (chikoo)"}
+    ]},
+    {"aisle": "Dairy", "items": [
+      {"id": "cream", "text": "1 cup (240 mL) heavy whipping cream, 35% fat or higher"}
+    ]},
+    {"aisle": "Baking & canned milk", "items": [
+      {"id": "condensed-milk", "text": "½ cup (120 mL) sweetened condensed milk"},
+      {"id": "sugar", "text": "2 tbsp sugar, adjusted to taste"},
+      {"id": "vanilla", "text": "1 tsp vanilla extract"}
+    ]}
+  ],
+  "prep": [
+    {"title": "Prepare the fruit", "text": "Wash 4–5 ripe sapota, peel them, and remove all seeds. Set aside the soft flesh for blending."},
+    {"title": "Measure everything", "text": "Measure 1 cup chilled heavy cream (35% fat or higher), ½ cup sweetened condensed milk, 2 tbsp sugar, and 1 tsp vanilla extract. Keep the cream cold until whipping."},
+    {"title": "Set out the equipment", "text": "Have a blender, mixing bowl, electric whisk or mixer, spatula, and a freezer-safe container with a lid ready. A chilled bowl makes whipping the cream easier."}
+  ],
+  "batchCount": 1,
+  "cookNote": "No heat needed. Make the full recipe in one batch, and leave 6–8 hours for freezing.",
+  "cooking": [
+    {"title": "Blend the sapota", "text": "Blend the peeled, deseeded flesh of 4–5 ripe sapota with up to 2 tbsp sugar until smooth. Adjust the sugar to taste; very sweet fruit may need less. Blending the sugar into the fruit helps avoid a grainy texture."},
+    {"title": "Whip the cream", "text": "Whip 1 cup chilled heavy cream (35% fat or higher) to soft peaks: the cream should hold a peak that gently folds over when the whisk is lifted."},
+    {"title": "Fold everything together", "text": "Gently fold ½ cup sweetened condensed milk and 1 tsp vanilla extract into the whipped cream. Add all the smooth sapota-and-sugar purée and fold just until evenly combined, keeping as much air in the cream as possible."},
+    {"title": "Cover & freeze", "time": "6–8 hours", "text": "Spoon the mixture into a freezer-safe container, smooth the top, and cover tightly. Freeze for 6–8 hours, or until firm enough to scoop."},
+    {"title": "Scoop & serve", "text": "Scoop the frozen ice cream into bowls. If it is too firm, let the container stand briefly at room temperature until scoopable, then return the remaining ice cream to the freezer."}
+  ],
+  "notes": [
+    {"title": "Sapota = chikoo", "text": "Both names refer to the same fruit. Choose fully ripe, soft fruit so the purée blends smoothly."},
+    {"title": "Adjust the sweetness", "text": "The condensed milk is already sweetened. Use the 2 tbsp sugar as a starting point and reduce it for very sweet sapota."},
+    {"title": "Keep the air in", "text": "Use whipping cream with at least 35% fat and stop at soft peaks. Fold gently after whipping rather than blending the finished mixture."}
+  ],
+  "storage": [
+    {"title": "Keep frozen", "text": "Store in a tightly covered freezer-safe container. Press a piece of food-safe wrap against the surface before putting on the lid to help limit ice crystals."},
+    {"title": "Soften only as needed", "text": "Let the ice cream soften just enough to scoop. Return the container to the freezer promptly after serving."}
+  ],
+  "sources": []
+}
