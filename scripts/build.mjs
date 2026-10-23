@@ -1,9 +1,13 @@
 import { readFile, readdir, mkdir, writeFile, cp, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = path.join(root, 'docs');
+const assetVersion = async name => createHash('sha256').update(await readFile(path.join(root, 'assets', name))).digest('hex').slice(0, 10);
+const cssVersion = await assetVersion('site.css');
+const jsVersion = await assetVersion('site.js');
 const e = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const recipes = await Promise.all((await readdir(path.join(root, 'recipes'))).filter(f => f.endsWith('.json')).sort().map(async f => JSON.parse(await readFile(path.join(root, 'recipes', f), 'utf8'))));
 const slugs = new Set();
@@ -18,7 +22,7 @@ await writeFile(path.join(output, '.nojekyll'), '');
 
 const icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5c3-1 6-1 9 1 3-2 6-2 9-1v14c-3-1-6-1-9 1-3-2-6-2-9-1z"/><path d="M12 6v14M6 9h3m-3 4h3m6-4h3m-3 4h3"/></svg>';
 function shell({title, description, prefix='', body, recipeId=''}) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f5ef"><meta name="description" content="${e(description)}"><title>${e(title)} · The Recipe Box</title><link rel="icon" href="${prefix}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${prefix}assets/site.css"><script src="${prefix}assets/site.js" defer></script></head><body ${recipeId ? `data-recipe="${e(recipeId)}"` : ''}><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="${prefix || './'}" aria-label="The Recipe Box home">${icon}<span>The Recipe Box<span class="brand-dot">.</span></span></a><a class="header-link" href="${prefix || './'}">All recipes <span aria-hidden="true">↗</span></a></div></header>${body}<footer><a class="brand footer-brand" href="${prefix || './'}">${icon}<span>The Recipe Box.</span></a><p>Good food. Written down. Made again.</p><a href="https://github.com/prateekmadhikar/recipe-box">View on GitHub <span aria-hidden="true">↗</span></a></footer><div class="toast" role="status" aria-live="polite" hidden></div></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f5ef"><meta name="description" content="${e(description)}"><title>${e(title)} · The Recipe Box</title><link rel="icon" href="${prefix}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${prefix}assets/site.css?v=${cssVersion}"><script src="${prefix}assets/site.js?v=${jsVersion}" defer></script></head><body ${recipeId ? `data-recipe="${e(recipeId)}"` : ''}><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="${prefix || './'}" aria-label="The Recipe Box home">${icon}<span>The Recipe Box<span class="brand-dot">.</span></span></a><a class="header-link" href="${prefix || './'}">All recipes <span aria-hidden="true">↗</span></a></div></header>${body}<footer><a class="brand footer-brand" href="${prefix || './'}">${icon}<span>The Recipe Box.</span></a><p>Good food. Written down. Made again.</p><a href="https://github.com/prateekmadhikar/recipe-box">View on GitHub <span aria-hidden="true">↗</span></a></footer><div class="toast" role="status" aria-live="polite" hidden></div></body></html>`;
 }
 const tags = r => r.tags.map(t => `<span class="tag">${e(t)}</span>`).join('');
 const card = r => `<a class="recipe-card" href="recipes/${e(r.slug)}/" data-card data-search="${e([r.title, r.shortDescription, ...r.tags].join(' ').toLowerCase())}"><div class="card-image"><img src="assets/${e(r.image)}" alt="${e(r.imageAlt)}" width="1536" height="1024"><span class="image-tag">${e(r.tags[0])}</span><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-copy"><p class="eyebrow">${e(r.tags.slice(1).join(' / '))}</p><h2>${e(r.title)}</h2><p>${e(r.shortDescription)}</p><div class="card-meta"><span>${e(r.prepTime)} prep</span><span>${e(r.yield)}</span></div></div></a>`;

@@ -15,7 +15,7 @@ for(const file of pages){
   for(const [,ref] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
     if (/^(https?:|data:|mailto:)/.test(ref)) continue;
     if(ref.startsWith('#')){assert(ids.includes(ref.slice(1)),`Missing anchor ${ref} in ${file}`);continue;}
-    const pathname=ref.split('#')[0];
+    const pathname=ref.split(/[?#]/)[0];
     const target=pathname.startsWith('/recipe-box/')?path.join(docs,pathname.slice('/recipe-box/'.length)):path.resolve(path.dirname(file),pathname);
     assert((await stat(target)).isFile() || (await stat(path.join(target,'index.html'))).isFile(),`Broken link ${ref} in ${file}`);
   }
