@@ -1,0 +1,86 @@
+{
+  "slug": "instant-pot-chili",
+  "title": "Instant Pot Beef & Bean Chili",
+  "eyebrow": "The big-batch favourite",
+  "description": "A big, cosy pot of beef, tender beans, and smoky tomato goodness. Made for cooking once and filling the freezer, with everything laid out from the grocery aisle to the last simmer.",
+  "shortDescription": "Hearty beef, tender beans, and a smoky tomato base. A little prep now, plenty of good dinners later.",
+  "image": "chili.jpg",
+  "imageAlt": "A cream bowl of beef and bean chili topped with sour cream, cheddar, and green onions",
+  "tags": ["Instant Pot", "Meal prep", "Freezer friendly"],
+  "yield": "About 14 modest portions",
+  "prepTime": "20 minutes",
+  "cookTime": "60–80 min per batch",
+  "totalTime": "About 2–3 hours",
+  "equipment": "6-quart Instant Pot · 2 batches",
+  "introNote": "Shop and prep for the whole recipe. Cook it in two half-size batches in a 6-quart pot; cooking quantities below are for ONE batch. Actual yield depends on portion size. Serve with rice or bread for a bigger meal.",
+  "groceries": [
+    {"aisle": "Produce", "items": [
+      {"id":"onions","text":"2 large onions"},
+      {"id":"garlic","text":"4 garlic cloves (buy 1 bulb)"},
+      {"id":"peppers","text":"2 bell peppers, any colour"},
+      {"id":"jalapeno","text":"1 jalapeño","optional":true},
+      {"id":"green-onions","text":"1 bunch green onions, for serving","optional":true},
+      {"id":"cilantro","text":"1 bunch cilantro, for serving","optional":true},
+      {"id":"lime","text":"1–2 limes, for serving","optional":true}
+    ]},
+    {"aisle":"Meat", "items":[{"id":"beef","text":"2 lb (about 900 g) lean ground beef"}]},
+    {"aisle":"Canned goods", "items":[
+      {"id":"paste","text":"3 tbsp tomato paste (buy 1 small can or tube)"},
+      {"id":"tomatoes","text":"2 × 15 oz (425 g) cans diced tomatoes, fire-roasted or regular"},
+      {"id":"sauce","text":"1 × 15 oz (425 g) can tomato sauce"},
+      {"id":"kidney","text":"2 × 15 oz (425 g) cans kidney beans"},
+      {"id":"pinto","text":"2 × 15 oz (425 g) cans pinto beans"}
+    ]},
+    {"aisle":"Broth & oils", "items":[
+      {"id":"broth","text":"3 cups (about 710 mL) low-sodium beef broth (buy 1 litre)"},
+      {"id":"oil","text":"2 tbsp olive oil"}
+    ]},
+    {"aisle":"Spices & baking", "items":[
+      {"id":"chili","text":"3 tbsp chili powder (a mild seasoning blend, not pure ground chile)"},
+      {"id":"cumin","text":"2 tsp ground cumin"},
+      {"id":"paprika","text":"2 tsp smoked paprika (+ ½ tsp if using regular tomatoes)"},
+      {"id":"oregano","text":"2 tsp dried oregano"},
+      {"id":"salt","text":"Salt & black pepper, to taste"},
+      {"id":"sugar","text":"1 tbsp brown sugar","optional":true},
+      {"id":"chipotle","text":"¼ tsp chipotle powder, with regular tomatoes for more smoky heat","optional":true},
+      {"id":"cocoa","text":"1 tsp unsweetened cocoa powder, for depth","optional":true}
+    ]},
+    {"aisle":"Dairy · toppings", "items":[
+      {"id":"cheese","text":"Shredded cheddar, to serve","optional":true},
+      {"id":"cream","text":"Sour cream, to serve","optional":true}
+    ]}
+  ],
+  "prep": [
+    {"title":"Chop all the vegetables", "text":"Dice 2 large onions and 2 bell peppers. Mince 4 garlic cloves. If using, finely dice 1 jalapeño; remove the seeds for less heat. Keep the garlic separate from the onions and peppers."},
+    {"title":"Drain the beans; open the tomatoes", "text":"Drain and rinse 2 cans kidney beans and 2 cans pinto beans (15 oz / 425 g each). Open 2 cans diced tomatoes and 1 can tomato sauce (15 oz / 425 g each); keep their liquid. Divide the beans and tomato sauce equally between two batch bowls."},
+    {"title":"Measure two spice bowls", "text":"Into EACH bowl, measure 1½ tbsp chili powder, 1 tsp ground cumin, 1 tsp smoked paprika, and 1 tsp dried oregano. Optional per bowl: ½ tbsp brown sugar and/or ½ tsp unsweetened cocoa. With regular tomatoes, add an extra ¼ tsp smoked paprika per bowl, plus ⅛ tsp chipotle powder per bowl if you want heat."},
+    {"title":"Set up two equal batches", "text":"For EACH batch, set aside 1 lb (about 450 g) ground beef, 1 tbsp olive oil, 1 diced onion, 1 diced bell pepper, 2 minced garlic cloves, 1½ tbsp tomato paste, 1½ cups broth, 1 can diced tomatoes with juice, half the tomato sauce, 1 can drained kidney beans, 1 can drained pinto beans, and 1 spice bowl. Split the optional diced jalapeño between the batches."},
+    {"title":"Get toppings & containers ready", "text":"If using, slice green onions, chop cilantro, and cut 1–2 limes into wedges. Set out shredded cheddar and sour cream. Have shallow containers ready for chilling and freezing the finished chili."}
+  ],
+  "batchCount": 2,
+  "cookNote": "The quantities in each step make ONE half-batch. Complete batch 1, transfer it to shallow containers, then repeat with the remaining ingredients. Keep uncooked beef refrigerated until its batch is ready.",
+  "cooking": [
+    {"title":"Brown the beef", "time":"6–8 min", "text":"Select Sauté and heat 1 tbsp olive oil. Add 1 lb (about 450 g) lean ground beef, break it into small crumbles, and cook until browned with no pink remaining. Spoon off excess fat if needed."},
+    {"title":"Soften the vegetables", "time":"4–5 min", "text":"Add 1 diced large onion, 1 diced bell pepper, and half the optional diced jalapeño. Cook, stirring, until softened. Add 2 minced garlic cloves and cook for 30 seconds. Stir in 1 prepared spice bowl and cook for another 30 seconds."},
+    {"title":"Deglaze the pot", "time":"1–2 min", "text":"Press Cancel. Pour in 1½ cups low-sodium beef broth and scrape the bottom thoroughly with a wooden spoon until no browned bits remain stuck. This thin liquid and a clean pot bottom help prevent a burn warning."},
+    {"title":"Layer in beans & tomatoes", "time":"2 min", "text":"Add 1 can drained, rinsed kidney beans and 1 can drained, rinsed pinto beans (each originally 15 oz / 425 g). Spoon 1 can diced tomatoes with its juice (15 oz / 425 g), half a can tomato sauce (about 7½ oz / 212 g), and 1½ tbsp tomato paste on top. Do not stir the tomato layer into the bottom. Check your model’s fill limit; keep this bean chili at or below the half-full line. If it is higher, divide into smaller batches while maintaining your model’s minimum thin liquid."},
+    {"title":"Pressure cook", "time":"20 min + heat-up", "text":"Secure the lid, set the valve to Sealing if your model requires it, and select High Pressure for 20 minutes. The countdown starts after the pot reaches pressure, which may take about 10–15 minutes."},
+    {"title":"Let pressure release naturally", "time":"20–30+ min", "text":"When cooking finishes, turn off Keep Warm and let pressure release fully on its own. Do not quick-release thick chili. Wait until the float valve drops and the lid unlocks; never force it open. The release time varies with the pot and batch."},
+    {"title":"Stir, finish & portion", "time":"5–10 min", "text":"Open the lid away from you and stir everything together, including the tomato paste. Taste and add salt and black pepper as needed. If too thin, use Sauté with the lid off for 5–10 minutes, stirring often; if too thick, add broth a splash at a time. Serve with any cheddar, sour cream, sliced green onions, chopped cilantro, and lime wedges. Transfer this batch to shallow containers, clean the pot bottom, and repeat for the next batch."}
+  ],
+  "notes": [
+    {"title":"No fire-roasted tomatoes?", "text":"Use the same amount of regular canned diced tomatoes. The extra ½ tsp smoked paprika for the whole recipe adds smoke; ¼ tsp chipotle powder adds optional heat. Both are already accounted for in the prep instructions."},
+    {"title":"Use the beans you find", "text":"Replace any of the four cans with the same size cans of black, navy/white haricot, cannellini, or Romano/cranberry beans. Drain and rinse them. Canned Romano beans are a good fit; fresh flat Romano green beans are a different ingredient. Use cooked canned beans here, not dried beans."},
+    {"title":"A note on the original recipe", "text":"Adapted from your shared chili conversation. The flavour proportions are preserved, with 3 cups broth instead of 2 so each of the two 6-quart batches has 1½ cups thin liquid. Pressure release is fully natural. This is an untested adaptation; follow the liquid minimum and fill limits in your own cooker’s manual. Larger cans change volume, so recheck the fill line."}
+  ],
+  "storage": [
+    {"title":"Cool & store", "text":"Divide into shallow containers and refrigerate or freeze within 2 hours. Keep only the next 2–3 days’ meals in the fridge at 4°C or colder and freeze the rest. Label containers with the date. Do not keep the whole week’s chili in the fridge."},
+    {"title":"Reheat a portion", "text":"Thaw in the fridge or microwave. Reheat to 74°C / 165°F throughout, stirring so the centre heats evenly. Add a splash of water or broth if needed; only reheat the portion you plan to eat."}
+  ],
+  "sources": [
+    {"title":"Instant Pot · pressure release & burn prevention", "url":"https://instantpot.com/pages/frequently-asked-questions"},
+    {"title":"Instant Pot · liquid guidance", "url":"https://instantpot.com/collections/multi-cookers/products/instant-pot-rio-6qt-multi-cooker"},
+    {"title":"Unico · canned Romano beans", "url":"https://www.unico.ca/products/unico-romano-beans"},
+    {"title":"Health Canada · storing & reheating leftovers", "url":"https://www.canada.ca/en/health-canada/services/general-food-safety-tips/food-safety-tips-leftovers.html"}
+  ]
+}
