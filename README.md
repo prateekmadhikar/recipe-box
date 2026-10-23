@@ -1,6 +1,6 @@
 # The Recipe Box
 
-A small personal cookbook: recipe tiles, aisle-sorted grocery checklists, all prep together, and cooking steps with amounts and ingredient forms included.
+A small cookbook: recipe tiles, aisle-sorted grocery checklists, all prep together, and cooking steps with amounts and ingredient forms included.
 
 **Live:** https://prateekmadhikar.github.io/recipe-box/
 
@@ -19,8 +19,8 @@ GitHub Pages serves the `docs/` folder on `main`. The site uses plain HTML, CSS,
 
 Fonts are loaded from Google Fonts, with local serif/sans-serif fallbacks. Recipe photos are stored in the repository. Grocery, prep, and cooking checkmarks use browser-local storage per recipe; they do not sync between devices. Reset buttons affect only their own section. Print opens every recipe section and restores the previous open state afterward.
 
-## Chili adaptation
+## Chili cooking notes
 
-The recipe comes from the supplied ChatGPT conversation. Canned Romano beans are correctly listed as a substitution. It is written for **two batches in a 6-quart cooker**, each with 1½ cups broth (3 cups total rather than the original 2 cups) and a fully natural pressure release, following manufacturer guidance. The adaptation has not been kitchen-tested. Yield is approximate; no fixed 1½-cup portion claim is made. Check cooker-specific liquid and fill limits.
+The chili recipe is written for **two batches in a 6-quart cooker**, each with 1½ cups broth (3 cups total) and a fully natural pressure release, following manufacturer guidance. It has not been kitchen-tested. Yield is approximate. Check cooker-specific liquid and fill limits. Canned Romano beans can replace kidney or pinto beans.
 
 Food-handling and manufacturer references are linked on the recipe page. The chili photograph is AI-generated, not a photo of a tested finished batch. Its generation prompt and tool are documented in `assets/image-provenance.json`.
