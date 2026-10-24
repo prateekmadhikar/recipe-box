@@ -7,3 +7,17 @@
 @media(max-width:370px){.intro-stamp{display:none}.recipe-hero h1{font-size:51px}.hero-actions{gap:18px}.section-heading h2{font-size:28px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media print{@page{margin:16mm}body{background:white;font-size:11pt;color:black}.site-header,.recipe-nav,.hero-actions,.back-link,footer,.toast,.section-tools button,.section-toggle,.section-progress,.recipe-photo,.recipe-sources{display:none!important}.recipe-page{padding:0;max-width:none}.recipe-hero{display:block;padding:0}.recipe-hero h1{font-size:38pt}.recipe-description{max-width:none;font-size:10pt}.recipe-layout{display:block}.recipe-facts dd,.recipe-intro-note{font-size:9pt}.recipe-section>summary{padding:15px 0;break-after:avoid}.section-heading h2{font-size:25pt}.section-heading>span{font-size:9pt}.section-body{padding-left:0}.grocery-grid{grid-template-columns:1fr 1fr}.check-row,.step-description,.notes-grid p{font-size:9pt}.check-row input{appearance:auto;width:12px;height:12px}.check-row input:before,.check-row input:after{display:none!important}.steps>li,.aisle,.notes-grid article{break-inside:avoid}.check-row:has(input:checked)>span{text-decoration:none;color:black}.step-description,.notes-grid p{color:#333}.recipe-section{border-color:#aaa}.recipe-facts{grid-template-columns:repeat(4,1fr)}a{color:black}}
+
+/* Keep shopping progress in view only within the grocery section. */
+.shopping-tracker{position:sticky;top:12px;z-index:2;padding:14px 18px;margin-bottom:24px;background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:0 5px 18px #302f2914}
+.shopping-tracker-heading{display:flex;justify-content:space-between;gap:16px;font-size:12px;color:var(--olive)}
+.shopping-tracker-heading span{font-variant-numeric:tabular-nums;font-weight:700}
+.shopping-tracker p{font-size:11px;color:var(--muted);margin:3px 0 8px}
+.shopping-tracker progress{display:block;width:100%;height:7px;border:0;border-radius:8px;overflow:hidden;background:var(--line);accent-color:var(--olive)}
+.shopping-tracker progress::-webkit-progress-bar{background:var(--line)}
+.shopping-tracker progress::-webkit-progress-value{background:var(--olive)}
+.shopping-tracker progress::-moz-progress-bar{background:var(--olive)}
+.shopping-tracker button{background:none;border:0;padding:10px 0 0;min-height:36px;color:var(--rust);font-size:11px;text-decoration:underline;text-underline-offset:3px}
+#groceries .check-row{min-height:32px;align-items:flex-start;padding:5px 0}
+@media(max-width:700px){.shopping-tracker{top:8px;padding:12px 14px}#groceries .check-row{min-height:44px;margin-bottom:4px}}
+@media print{.shopping-tracker{display:none!important}}

@@ -24,12 +24,24 @@ if (recipe) {
   let state = {};
   try { const saved = JSON.parse(localStorage.getItem(key) || '{}'); if (saved && typeof saved === 'object' && !Array.isArray(saved)) state = saved; }
   catch { saveNote.textContent = 'Checkmarks are available for this visit. Browser storage is unavailable.'; }
+  const shoppingTracker = document.querySelector('[data-shopping-tracker]');
+  const groceryChecks = [...document.querySelectorAll('#groceries [data-check]')];
+  const toggleGroceries = document.querySelector('[data-toggle-groceries]');
   function updateProgress() {
     for (const counter of document.querySelectorAll('[data-progress]')) {
       const items = [...document.getElementById(counter.dataset.progress).querySelectorAll('[data-check]')];
       const done = items.filter(c => c.checked).length;
       counter.textContent = `${done} / ${items.length}`;
       counter.setAttribute('aria-label', `${done} of ${items.length} completed`);
+    }
+    if (shoppingTracker) {
+      const done = groceryChecks.filter(c => c.checked).length;
+      const total = groceryChecks.length;
+      const percent = total ? Math.round(done / total * 100) : 0;
+      shoppingTracker.querySelector('[data-shopping-percent]').textContent = `${percent}%`;
+      shoppingTracker.querySelector('[data-shopping-status]').textContent = `${done} of ${total} bought / have · ${total - done} left`;
+      shoppingTracker.querySelector('[data-shopping-meter]').value = done;
+      toggleGroceries.textContent = done === total ? 'Uncheck all items' : 'Mark all as bought / have';
     }
   }
   function persist() {
@@ -39,6 +51,14 @@ if (recipe) {
     updateProgress();
   }
   for (const check of checks) {check.checked = state[check.dataset.check] === true; check.addEventListener('change',persist);}
+  if (shoppingTracker) {
+    shoppingTracker.hidden = false;
+    toggleGroceries.addEventListener('click', () => {
+      const checked = !groceryChecks.every(c => c.checked);
+      groceryChecks.forEach(c => { c.checked = checked; });
+      persist();
+    });
+  }
   updateProgress();
   for (const button of document.querySelectorAll('[data-reset]')) {
     button.addEventListener('click',()=>{
