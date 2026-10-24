@@ -21,6 +21,6 @@ Fonts are loaded from Google Fonts, with local serif/sans-serif fallbacks. Recip
 
 ## Chili cooking notes
 
-The chili recipe is written for **two batches in a 6-quart cooker**, each with 1½ cups broth (3 cups total) and a fully natural pressure release, following manufacturer guidance. It has not been kitchen-tested. Yield is approximate. Check cooker-specific liquid and fill limits. Canned Romano beans can replace kidney or pinto beans.
+The chili recipe is written for **one full batch with 2 lb beef and 3 cups broth**, with a fully natural pressure release. Use a cooker large enough to keep all ingredients at or below its half-full limit for beans; do not assume it fits a 6-quart cooker. It has not been kitchen-tested. Yield and timing are approximate. Check cooker-specific liquid and fill limits. Canned Romano beans can replace kidney or pinto beans.
 
 Food-handling and manufacturer references are linked on the recipe page. The chili photograph is AI-generated, not a photo of a tested finished batch. Its generation prompt and tool are documented in `assets/image-provenance.json`. The sapota ice cream photo is also AI-generated; its prompt is in `assets/sapota-image-provenance.json`.
